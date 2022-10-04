@@ -39,7 +39,7 @@ function server () {
           ] 
 
     });   
-    serverApollo.listen().then(({url})=>{
+    serverApollo.listen({ port: 8000 }).then(({url})=>{
         console.log(`Server ON, ${url}`);            
     })  
 } 
