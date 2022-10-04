@@ -51,6 +51,17 @@ const typeDefs = gql`
 		bestseller: Boolean
 		images:[String]
 	}	
+	type Transaction {
+		id: ID
+		description: String
+		amount: Int
+		ref: String 
+		status: String
+		type: String
+		discount: Boolean
+		bestseller: Boolean
+		items:[String]
+	}
 	type User {
 		id: ID
 		name: String
@@ -92,6 +103,15 @@ const typeDefs = gql`
 		discount:Boolean!
 		bestseller:Boolean!
 	}
+	input TransactionInput{
+		description:String!
+		amount:Int!
+		ref:String!
+		status:String!
+		type:String!
+		discount:Boolean!
+		bestseller:Boolean!
+	}
 	input TixInput{
 		client:String!
 		origin:String!
@@ -112,14 +132,14 @@ const typeDefs = gql`
 	}
 	input LoginInput{
 		email:String!
-		password:String!
-		
+		password:String!		
 	}
 	
 	type Query {
 		# user
 		getUser: User 
 		getTravelsByStatus(status:String!): [Travel] 
+		getTransactionsByStatus(status:String!): [Transaction] 
 		getCategories(status:String!,skip:Int,limit:Int): [Category] 
 		getTixsByStatus(status:String!): [Tix] 
 		getProductsByStatus(status:String!,skip:Int,limit:Int): [Product] 
@@ -133,6 +153,9 @@ const typeDefs = gql`
 	}
 	type Mutation {
 		newProduct(input:ProductInput):Product
+	}
+	type Mutation {
+		newTransaction(input:TransactionInput):Transaction
 	}
 	type Mutation {
 		newTix(input:TixInput):Tix
