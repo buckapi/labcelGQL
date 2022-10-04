@@ -40,6 +40,9 @@ async function getBestseller(bestseller,skip,limit){
 async function newTransaction(input){
     const newTransaction = input;
     const {       
+        idApp,
+        idUser,
+        idBranch,
         description, 
         amount, 
         ref,    

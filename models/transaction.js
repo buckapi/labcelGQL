@@ -16,6 +16,18 @@ const TransactionSchema= Schema({
         trim:true,
         unique:true,
     },
+    idUser:{
+        type:String,
+        trim:true,
+    },
+    idApp:{
+        type:String,
+        trim:true,
+    },
+    idBranch:{
+        type:String,
+        trim:true,
+    },
     status:{
         type:String,
         trim:true,
