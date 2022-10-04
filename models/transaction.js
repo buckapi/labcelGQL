@@ -32,6 +32,10 @@ const TransactionSchema= Schema({
         type:String,
         trim:true,
     },
+    transactionType:{
+        type:String,
+        trim:true,
+    }, 
     type:{
         type:String,
         trim:true,

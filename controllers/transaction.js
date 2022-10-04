@@ -47,6 +47,7 @@ async function newTransaction(input){
         amount, 
         ref,    
         type,
+        transactionType,
         status,
         discount,
         bestseller,
