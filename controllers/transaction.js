@@ -39,18 +39,15 @@ async function getBestseller(bestseller,skip,limit){
 
 async function newTransaction(input){
     const newTransaction = input;
-    const { 
-        name, 
+    const {       
         description, 
-        price, 
-        ref,
-        presentation, 
-        category, 
-        currency, 
+        amount, 
+        ref,    
+        type,
         status,
         discount,
         bestseller,
-        images
+        items
     }=newTransaction;
 
     try{
