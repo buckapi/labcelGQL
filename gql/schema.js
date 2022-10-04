@@ -54,6 +54,9 @@ const typeDefs = gql`
 	type Transaction {
 		id: ID
 		description: String
+		idApp: String
+		idUser: String
+		idBranch: String
 		amount: Int
 		ref: String 
 		status: String
@@ -104,6 +107,9 @@ const typeDefs = gql`
 		bestseller:Boolean!
 	}
 	input TransactionInput{
+		idUser: String!
+		idApp: String!
+		idBranch: String!
 		description:String!
 		amount:Int!
 		ref:String!
