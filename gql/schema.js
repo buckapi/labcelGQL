@@ -116,6 +116,7 @@ const typeDefs = gql`
 		ref:String!
 		status:String!
 		type:String!
+		transactionType:String!
 		discount:Boolean!
 		bestseller:Boolean!
 	}
