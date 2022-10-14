@@ -42,7 +42,7 @@ async function getBestseller(bestseller,skip,limit){
     .skip(skip)
     .limit(limit)  
     .sort({
-         createdAt: 'asc'
+        name: 'asc'
      })
     ;
     return transactions;
