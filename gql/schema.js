@@ -61,6 +61,8 @@ const typeDefs = gql`
 	}	
 	type Transaction {
 		id: ID
+		name: String
+		email: String
 		description: String
 		idApp: String
 		idCard: String
@@ -120,6 +122,8 @@ const typeDefs = gql`
 		idApp: String!
 		idBranch: String!
 		description:String!
+		name:String!
+		email:String!
 		amount:Int!
 		ref:String!
 		status:String!

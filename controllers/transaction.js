@@ -57,6 +57,8 @@ async function newTransaction(input){
         idBranch,
         description, 
         amount, 
+        name,
+        email,
         ref,    
         type,
         transactionType,
