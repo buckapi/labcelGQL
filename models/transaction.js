@@ -49,8 +49,7 @@ const TransactionSchema= Schema({
         trim:true,
     }, 
     items:{
-        servicio:String,
-        monto:Int,
+       type:Object,
           },
     discount:{
         type:Boolean,
