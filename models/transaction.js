@@ -20,6 +20,14 @@ const TransactionSchema= Schema({
         type:String,
         trim:true,
     },
+    name:{
+        type:String,
+        trim:true,
+    },
+    email:{
+        type:String,
+        trim:true,
+    },
     idApp:{
         type:String,
         trim:true,
