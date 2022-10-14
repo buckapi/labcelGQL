@@ -16,7 +16,7 @@ const TransactionSchema= Schema({
         trim:true,
         unique:true,
     },
-    idUser:{
+    idCard:{
         type:String,
         trim:true,
     },
