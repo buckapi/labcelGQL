@@ -65,7 +65,7 @@ async function newTransaction(input){
         status,
         discount,
         bestseller,
-        items
+        items,    
     }=newTransaction;
 
     try{
