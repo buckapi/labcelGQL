@@ -77,6 +77,7 @@ async function newTransaction(input){
 }
 
 module.exports={
+    getBranchTransactions,
     newTransaction,
     getTransactionsByStatus,
     getBestseller,
