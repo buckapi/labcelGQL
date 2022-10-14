@@ -108,7 +108,7 @@ const typeDefs = gql`
 		bestseller:Boolean!
 	}
 	input TransactionInput{
-		idUser: String!
+		idCard: String!
 		idApp: String!
 		idBranch: String!
 		description:String!
@@ -133,7 +133,7 @@ const typeDefs = gql`
 
 	input UserInput{
 		name:String!
-		username:String!
+		username:br000002String!
 		email:String!
 		password:String!
 		role: UserRoleEnum = ACCOUNTANT

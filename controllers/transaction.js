@@ -53,7 +53,7 @@ async function newTransaction(input){
     const newTransaction = input;
     const {       
         idApp,
-        idUser,
+        idCard,
         idBranch,
         description, 
         amount, 
