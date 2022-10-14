@@ -12,7 +12,6 @@ const resolvers = {
 			return null;
 		},
 		getBranchTransactions: (_,{idBranch,skip,limit}) =>transactionController.getDiscount(idBranch,skip,limit),
-
 		getTransactionsByStatus: (_,{status,skip,limit}) =>transactionController.getTransactionsByStatus(status,skip,limit),
 		getProductsByStatus: (_,{status,skip,limit}) =>productController.getProductsByStatus(status,skip,limit),
 		getBestseller: (_,{bestseller,skip,limit}) =>productController.getBestseller(bestseller,skip,limit),
