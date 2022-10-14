@@ -147,7 +147,8 @@ const typeDefs = gql`
 		# user
 		getUser: User 
 		getTravelsByStatus(status:String!): [Travel] 
-		getTransactionsByStatus(status:String!): [Transaction] 
+		getTransactionsByStatus(status:String!): [Transaction]
+		getTransactionsByBranch(idbranch:String!): [Transaction]  
 		getCategories(status:String!,skip:Int,limit:Int): [Category] 
 		getTixsByStatus(status:String!): [Tix] 
 		getProductsByStatus(status:String!,skip:Int,limit:Int): [Product] 
