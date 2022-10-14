@@ -24,7 +24,7 @@ const typeDefs = gql`
 		status: String
 		subs: [Subs]
 	}		
-	type Items{
+	type items{
 		servicio: String
 		tipo: String
 		imei: String
@@ -74,7 +74,7 @@ const typeDefs = gql`
 		transactionType:String
 		discount: Boolean
 		bestseller: Boolean
-		items:[Items]
+		items:[items]
 	}
 	type User {
 		id: ID
@@ -131,6 +131,7 @@ const typeDefs = gql`
 		transactionType:String!
 		discount:Boolean!
 		bestseller:Boolean!
+		
 	}
 	input TixInput{
 		client:String!

@@ -49,7 +49,7 @@ const TransactionSchema= Schema({
         trim:true,
     }, 
     items:{
-        type:[String],
+        type:[items],
     },
     discount:{
         type:Boolean,
