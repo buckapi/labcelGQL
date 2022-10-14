@@ -133,7 +133,7 @@ const typeDefs = gql`
 
 	input UserInput{
 		name:String!
-		username:br000002String!
+		username:String!
 		email:String!
 		password:String!
 		role: UserRoleEnum = ACCOUNTANT
