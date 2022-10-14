@@ -36,12 +36,24 @@ async function getBestseller(bestseller,skip,limit){
     ;
     return transactions;
  }
+ async function getBranchTransactions(idBranch,skip,limit){
+    const transactions = await Transaction.find()
+    .where({idBranch})
+    .skip(skip)
+    .limit(limit)  
+    .sort({
+         createdAt: 'asc'
+     })
+    ;
+    return transactions;
+ }
 
 async function newTransaction(input){
     const newTransaction = input;
     const {       
         idApp,
         idUser,
+        idCard,
         idBranch,
         description, 
         amount, 

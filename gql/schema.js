@@ -56,6 +56,7 @@ const typeDefs = gql`
 		description: String
 		idApp: String
 		idUser: String
+		idCard:String
 		idBranch: String
 		amount: Int
 		ref: String 
@@ -109,6 +110,7 @@ const typeDefs = gql`
 	}
 	input TransactionInput{
 		idUser: String!
+		idCard: String!
 		idApp: String!
 		idBranch: String!
 		description:String!
