@@ -11,6 +11,7 @@ const resolvers = {
 			console.log("Obteniendo usuario");
 			return null;
 		},
+		getTransactionsByBranch: (_,{idbranch,skip,limit}) =>transactionController.getTransactionsByBranch(idbranch,skip,limit),
 		getTransactionsByStatus: (_,{status,skip,limit}) =>transactionController.getTransactionsByStatus(status,skip,limit),
 		getProductsByStatus: (_,{status,skip,limit}) =>productController.getProductsByStatus(status,skip,limit),
 		getBestseller: (_,{bestseller,skip,limit}) =>productController.getBestseller(bestseller,skip,limit),

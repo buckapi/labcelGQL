@@ -36,6 +36,18 @@ async function getBestseller(bestseller,skip,limit){
     ;
     return transactions;
  }
+ async function getTransactionsByBranch(idbranch,skip,limit){
+    const transactions = await Transaction.find()
+    .where({idbranch})
+    .skip(skip)
+    .limit(limit)  
+    .sort({
+         name: 'asc'
+     })
+    ;
+    return transactions;
+ }
+ 
 
 async function newTransaction(input){
     const newTransaction = input;
@@ -65,6 +77,7 @@ async function newTransaction(input){
 }
 
 module.exports={
+    getTransactionsByBranch,
     newTransaction,
     getTransactionsByStatus,
     getBestseller,
