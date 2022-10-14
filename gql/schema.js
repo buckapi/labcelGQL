@@ -55,7 +55,7 @@ const typeDefs = gql`
 		id: ID
 		description: String
 		idApp: String
-		idUser: String
+		idCard: String
 		idBranch: String
 		amount: Int
 		ref: String 
