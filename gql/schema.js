@@ -155,7 +155,8 @@ const typeDefs = gql`
 		getProductsByStatus(status:String!,skip:Int,limit:Int): [Product] 
 		getBestseller(bestseller:Boolean!,skip:Int,limit:Int): [Product] 
 		getDiscount(discount:Boolean!,skip:Int,limit:Int): [Product] 
-
+		getBranchTransactions(idBranch:Boolean!,skip:Int,limit:Int): [Transaction] 
+		getBranchTransactions
 	}
 	
 	type Mutation {
