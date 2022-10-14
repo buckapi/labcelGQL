@@ -36,9 +36,9 @@ async function getBestseller(bestseller,skip,limit){
     ;
     return transactions;
  }
- async function getTransactionsByBranch(idbranch,skip,limit){
+ async function getTransactionsByBranch(idBranch,skip,limit){
     const transactions = await Transaction.find()
-    .where({idbranch})
+    .where({idBranch})
     .skip(skip)
     .limit(limit)  
     .sort({
