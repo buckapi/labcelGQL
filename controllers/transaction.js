@@ -55,6 +55,7 @@ async function newTransaction(input){
         idApp,
         idCard,
         idBranch,
+        createdAt,
         description, 
         amount, 
         name,

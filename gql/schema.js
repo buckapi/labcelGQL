@@ -73,6 +73,7 @@ const typeDefs = gql`
 		ref: String 
 		status: String
 		type: String
+		createdAt:String
 		transactionType:String
 		discount: Boolean
 		bestseller: Boolean
