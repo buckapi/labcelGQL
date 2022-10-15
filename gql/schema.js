@@ -31,6 +31,9 @@ const typeDefs = gql`
 		tag: String
 		folio: String
 		monto: Int
+		referencia: String
+		concepto: String
+		tecnico: String
 	}
 	type Tix {
 		id: ID
@@ -43,7 +46,6 @@ const typeDefs = gql`
 		status: String
 		rateType: String
 		currency: String
-	
 	}		
 	type Product {
 		id: ID
